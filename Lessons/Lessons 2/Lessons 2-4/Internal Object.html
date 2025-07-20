@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internal Object</title>
+</head>
+<body>
+<script>
+
+
+  let yana = {
+    name: 'yana',
+    age: 25,
+    id: 5,
+    skills : [1, 2, 3, 4],
+    wife:{
+      name: 'yana',
+      age: 25,
+      id: 6
+  }
+  }
+
+  //console.log(yana);
+  //console.log(yana.name);  // виводить значення обєкту
+  //console.log(yana['name']);  // ще один спосіб вивести значення  ( обовязкоко вказувати ' ' )
+
+  console.log(yana.skills[0]);  // виводить значення з масиву
+  console.log(yana.wife.name);  //виводить значення з обєкту який знаходиться в обєкті
+
+</script>
+</body>
+</html>
