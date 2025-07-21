@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Masuv and Object</title>
+</head>
+<body>
+<script>
+
+    let users = [
+
+        {skills:['Javascript','React','Redux'], id:1 , name:'Alex', age:25, status:true},
+        {skills:['js', 'mongo'], id:2 , name:'Sam', age:25, status:true},
+        {skills:['python', 'ruby'], id:3 , name:'Sam', age:25, status:false},
+        {skills:['dd', 'node'], id:4 , name:'Sam', age:25, status:true},
+    ]
+console.log(users);
+    console.log(users[0].id);
+    console.log(users[1].skills[1]);
+    let us = users[2];
+    let name = users[2].name;  //як варіант виводити змінні(замінюємо назвою для легшого виводу)
+    console.log(us.name);
+</script>
+</body>
+</html>
