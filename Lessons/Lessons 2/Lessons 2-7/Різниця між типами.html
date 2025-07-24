@@ -14,7 +14,13 @@
     let a = 100;
     let b = a;
     b = b +100;// 110
-console.log(a);//100
+    console.log(a);//100  // ПРИМІТИВНИЙ ТИП ДАНИХ
+
+    let user ={name:'Dima'};
+    let user2 = user;
+    user2.age = 35;
+    console.log(user2);  //  ЦЕ ССИЛОЧНИЙ ТИП ДАНИХ - якщо додавати зміни до user2 то вони автоматично скопіюються до user ( по суті ми додаємо зміну в один об'єкт )
+
 </script>
 </body>
 </html>
