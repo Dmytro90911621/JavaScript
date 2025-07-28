@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IF</title>
+</head>
+<body>
+<script>
+
+  //if (true) {
+  //console.log('test');
+  //}
+  if (false) {
+    console.log('test');
+  }
+
+
+ // let age = +prompt('enter age');  // + приводить до 'number'(числового типу)
+  // console.log(age, typeof age);
+ //if (age>=18) {
+  // console.log('good');
+ //  } else {
+  // console.log('bad');
+// }
+
+  let color =prompt('enter color');
+  if (color === 'red' && confirm('the red light is on?')) {  // кращий варіант запису && - порівнює (перевіряє)
+      console.log('stop');
+
+
+      //if (confirm('the red light is on?')) {//  дає можливість зробити ще вибір true або false
+        //  console.log('stop');
+      //} else {
+        //  console.log('go!!!');
+      //}
+  }
+  else if (color === 'green') {
+      console.log('start');
+  }
+  else if (color === 'yellow') {
+      console.log('get ready');
+  }
+  else   {                          // якщо цього кольору не буде прописуємо цю функцію і вона виводе значення яке ми вкажемо
+      console.log('????');
+  }
+
+
+</script>
+</body>
+</html>
