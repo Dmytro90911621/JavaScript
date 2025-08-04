@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Цикл for of</title>
+</head>
+<body>
+<script>
+    let users = [
+        {name: 'John', age: 25, status: false},
+        {name: 'Mary', age: 30,  status: false},
+        {name: 'Jack', age: 35,  status: true},
+        {name: 'Jill', age: 40,  status: true},
+        {name: 'John', age: 35,  status: false},
+        {name: 'Jill', age: 40,  status: true},
+        {name: 'Jack', age: 35,  status: false},
+        {name: 'Jill', age: 40,  status: true},
+        {name: 'Jill', age: 35,  status: false},
+        {name: 'Jack', age: 35,  status: true},
+        {name: 'Jill', age: 40,  status: false},
+        {name: 'Jill', age: 35,status: true},
+    ]
+    debugger;  // дозволяє в автоматичному режимі передивитись всіх користувачів та вивести потрібну інформацію
+    for (let user of users)   // цей цикл виводить всі імена ( що вкажеш те і виведе вік, статус -- всіх користувачів)
+   if (user.status === true)
+       console.log(user);
+        // console.log(user.status === true);
+
+</script>
+</body>
+</html>
