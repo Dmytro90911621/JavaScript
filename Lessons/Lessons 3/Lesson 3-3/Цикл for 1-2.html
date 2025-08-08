@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Цикл for</title>
+</head>
+<body>
+<script>
+  let users = [
+
+  { title: 'milk',
+    price:22,
+    image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzS_kmLt52y3tqmNbdwIxZRQ2u80hmDQKDNw&s'
+  },
+
+  { title: 'juice',
+    price:28,
+    image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzS_kmLt52y3tqmNbdwIxZRQ2u80hmDQKDNw&s'
+  },
+
+  { name: 'water',
+    price:31,
+    image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzS_kmLt52y3tqmNbdwIxZRQ2u80hmDQKDNw&s'
+  },
+
+  { title: 'candy',
+    price:18,
+    image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzS_kmLt52y3tqmNbdwIxZRQ2u80hmDQKDNw&s'
+  },
+
+  ];
+debugger;
+  for (let i = 0; i < users.length; i++){  // length - це довжина масиву(тобто скільки в масиві знаходиться функцій)
+   let user = users[i];
+      console.log(user.title , user.price);
+  }
+  // document.write('<div> <h2>  ${users[i].name}</h2></div>')
+</script>
+</body>
+</html>
