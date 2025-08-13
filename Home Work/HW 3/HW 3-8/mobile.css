@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+    .user-block {
+        flex: 1 1 100%;
+    }
+}
