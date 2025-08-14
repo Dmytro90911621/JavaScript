@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>#reLkOkTB29Q</title>
+</head>
+<body>
+<script>
+
+  //  створити масив книжок (назва, кількість сторінок, автори , жанри).
+
+  //– знайти найбільшу книжку.
+
+  //– знайти книжку/ки з найбільшою кількістю жанрів
+
+  //– знайти книжку/ки з найдовшою назвою
+
+  //– знайти книжку/ки, які писали 2 автори
+
+  //– знайти книжку/ки, які писав 1 автор
+
+  let book = [
+
+    {name:'Снотворець', numberOFpage:150, author:'Роджер Желязни',genre:['fantasy']},
+    { name: 'Полічи зорі',numberOFpage: 131, author:'Лоїс Лоурі , Дженні Роз', genre:[' Історичні романи'] },
+    {name: 'Злочини', numberOFpage: 87, author: 'Луїза Кеннеді', genre: [' Історичні романи']},
+    {name: 'Козацька помста', numberOFpage: 173, author: 'Андрій Чайковський', genre: [' Історичні романи , Драма']},
+    { name: 'Полічи зорі', numberOFpage: 131, author: 'Лоїс Лоурі', genre: ['Історичні романи'] },
+    { name: 'Той, хто біжить лабіринтом', numberOFpage: 375, author: 'Джеймс Дешнер', genre: ['Фантастика'] },
+    { name: 'Щоденник Анни Франк', numberOFpage: 283, author: 'Анна Франк', genre: ['Мемуари'] },
+    { name: '451 градус за Фаренгейтом', numberOFpage: 249, author: 'Рей Бредбері', genre: ['Антиутопія'] },
+    { name: 'Маленький принц', numberOFpage: 96, author: 'Антуан де Сент-Екзюпері', genre: ['Філософська казка'] },
+    { name: 'Портрет Доріана Грея', numberOFpage: 304, author: 'Оскар Вайльд', genre: ['Готичний роман'] },
+    { name: 'Тіні забутих предків', numberOFpage: 180, author: 'Михайло Коцюбинський', genre: ['Класика української літератури'] },
+    { name: 'Гаррі Поттер і філософський камінь', numberOFpage: 309, author: 'Джоан Ролінґ', genre: ['Фентезі'] },
+    { name: 'Хлопчик у смугастій піжамі', numberOFpage: 216, author: 'Джон Бойн', genre: ['Історичний роман'] },
+    { name: 'Злочин і кара', numberOFpage: 430, author: 'Федір Достоєвський', genre: ['Психологічний роман'] }
+
+  ];
+
+                  //– знайти найбільшу книжку.
+
+ //let bigBook = book[0];
+ //for (let i = 0; i < book.length; i++) {
+ //if (book[i].numberOFpage > bigBook.numberOFpage) {
+ //  bigBook = book[i];}
+ //}
+//console.log(bigBook);
+
+
+
+                 //– знайти книжку/ки з найбільшою кількістю жанрів
+
+//  let maxGenre =0;
+// for (let i = 0; i < book.length; i++) {
+//      if (typeof book[i].genre[0] === 'string' && book[i].genre[0].includes(',')) {
+//         book[i].genre = book[i].genre[0].split(',').map(g => g.trim());
+//     }
+// }
+//  let maxGenreCount = 0;
+//  let booksWithMostGenres = [];
+
+//  for (let b of book) {
+//      const genreCount = b.genre.length;
+
+//      if (genreCount > maxGenreCount) {
+//          maxGenreCount = genreCount;
+//          booksWithMostGenres = [b];
+//      } else if (genreCount === maxGenreCount) {
+//          booksWithMostGenres.push(b);
+//      }
+//  }
+//  console.log(booksWithMostGenres);
+
+
+                                     // знайти книжку/ки з найдовшою назвою
+
+//  let maxName = 0;
+//  let x = [];
+//  for (let b of book) {
+//      const titleLength = b.name.length;
+//      if (titleLength > maxName) {
+//          maxName = titleLength;
+//          x = [b];
+//      } else if (titleLength === maxName) {
+//          x.push(b);
+//      }
+//
+//      }
+//  console.log(x);
+
+
+
+            //  – знайти книжку/ки, які писали 2 автори
+
+//  let a = [];
+//  for (let au of book) {
+//      let authors = au.author.split(' , ').map(a=>a.trim());
+//      if (authors.length === 2) {
+//          a.push(au);
+//      }
+//  }
+//  console.log(a);
+
+
+            //  – знайти книжку/ки, які писав 1 автор
+
+  let a = [];
+  for (let au of book) {
+      let authors = au.author.split(',').map(a=>a.trim());
+      if (authors.length === 1) {
+          a.push(au);
+      }
+  }
+  console.log(a);
+
+</script>
+</body>
+</html>
