@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Створити пустий масив</title>
+</head>
+<body>
+<script>
+
+//    1. Створити пустий масив та :
+
+//        a. заповнити його 50 парними числами за допомоги циклу.
+
+//        b. заповнити його 50 непарними числами за допомоги циклу.
+
+//        c. Заповнити масив 20-ма рандомними числами. (Google: Generate random number JS)
+
+//    d. Заповнити масив 20-ма рандомними числами в діапазоні від 8 до 732 (Google: Generate random number JS)
+
+
+let m = [];
+
+                  //  a. заповнити його 50 парними числами за допомоги циклу
+
+//for (let i = 0; m.length < 50; i++) {
+//    if (i % 2 === 0) {   //--  перевіряє чи число парне
+//        m.push(i);
+//       console.log(i);  //--  додає число до масиву
+//    }
+//}
+
+                  //  b. заповнити його 50 непарними числами за допомоги циклу.
+
+//for (let i = 0; m.length < 50; i++) {
+//    if (i % 2 !== 0) {
+//        m.push(i);
+//        console.log(i);
+//    }
+//}
+
+                   //  c. Заповнити масив 20-ма рандомними числами. (Google: Generate random number JS)
+
+//for (let i = 0; i < 20; i++) {
+//    let random = Math.floor(Math.random() * 101);
+//    m.push(random);}
+//console.log(m);
+
+
+                    //  d. Заповнити масив 20-ма рандомними числами в діапазоні від 8 до 732
+
+for (let i = 0; i < 20; i++) {
+    let random = Math.floor(Math.random() * (732 - 8 + 1)) + 8;
+        m.push(random);
+}
+console.log(m);
+
+</script>
+</body>
+</html>
