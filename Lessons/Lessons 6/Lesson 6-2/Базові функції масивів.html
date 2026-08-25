@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Базові функції масивів</title>
+</head>
+<body>
+<script>
+
+    let arr = [];
+    console.log(Array.isArray(arr)) ;/// isArray  дозволяє дізнатись чи являється даний обєкт масивом
+
+    arr.push('hello');
+    arr.push('hello2');
+    arr.push('hello3');
+    arr.push('hello4');
+    arr.push('hello5');
+    console.log(arr);
+
+    arr.pop();/// дозволяє вирізати останній елемент з масиву
+    console.log(arr);
+    console.log(arr.pop());/// дозволяє повернути вирізаний елемент
+
+    arr.unshift('YASHA');///ДОЗВОЛЯЄ ДОДАТИ НА ПОЧАТОК масиву
+    console.log(arr);
+
+    arr.shift();
+    console.log(arr);
+
+    let join =arr.join(' - ');/// дозволяє зєднати елементи між собою в масиві
+    console.log(join);
+
+    let nam = [1,2,3];
+
+    let concat = arr.concat(nam);///дозволяє зєднувати масиви
+    console.log(concat);
+
+    console.log(nam.reverse());/// перевертаю масив
+
+    let slice = concat.slice(0,4);/// дозволяє вирізати з масиву
+    console.log(slice);
+
+    let splice = concat.splice(0,2,'111','222');///дозволяє видаляти елементи з масиву. 0- початок видалення! 2- кінець ! Якщо далі будемо указувати то буде вставляти в concat
+    console.log(splice);
+    console.log(concat);
+
+    console.log(concat.includes(4));
+    console.log(concat.includes(3));
+
+
+
+
+</script>
+
+</body>
+</html>
